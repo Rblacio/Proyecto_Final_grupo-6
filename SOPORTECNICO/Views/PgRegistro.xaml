@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SOPORTECNICO.Views.PgRegistro">
+    <ContentPage.Content>
+        <ScrollView VerticalOptions="Center">
+            <StackLayout>
+
+                <Image Source="sisvaa" />
+
+                <Label FontSize="16" 
+                       Padding="30,24,30,0">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Text="&#xf007; " 
+                                      TextColor="#004483" 
+                                      FontSize="25" 
+                                      FontFamily="{StaticResource FontAwesomeSolid}"/>
+                                <Span Text="Cedula"
+                                      TextColor="#004483"
+                                      FontAttributes="Bold" 
+                                      FontSize="20"/>
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+                <ContentView Padding="30,0,30,0">
+                    <Entry x:Name="Cedula" 
+                           Placeholder="Cedula"/>
+                </ContentView>
+
+                <Label FontSize="16" 
+                       Padding="30,24,30,0">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Text="&#xf007; " 
+                                      TextColor="#004483" 
+                                      FontSize="25" 
+                                      FontFamily="{StaticResource FontAwesomeSolid}"/>
+                                <Span Text="Nombre"
+                                      TextColor="#004483"
+                                      FontAttributes="Bold" 
+                                      FontSize="20"/>
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+                <ContentView Padding="30,0,30,0">
+                    <Entry x:Name="Nombre" 
+                           Placeholder="Nombre"/>
+                </ContentView>
+
+                <Label FontSize="16" 
+                       Padding="30,24,30,0">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Text="&#xf007; " 
+                                      TextColor="#004483" 
+                                      FontSize="25" 
+                                      FontFamily="{StaticResource FontAwesomeSolid}"/>
+                                <Span Text="Usuario"
+                                      TextColor="#004483"
+                                      FontAttributes="Bold" 
+                                      FontSize="20"/>
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+                <ContentView Padding="30,0,30,0">
+                    <Entry x:Name="Usuario" 
+                           Placeholder="Usuario"/>
+                </ContentView>
+
+                <Label FontSize="16" 
+                       Padding="30,24,30,0">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Text="&#xf084; " 
+                                      TextColor="#004483" 
+                                      FontSize="25" 
+                                      FontFamily="{StaticResource FontAwesomeSolid}"/>
+                                <Span Text="Contraseña"
+                                      TextColor="#004483"
+                                      FontAttributes="Bold" 
+                                      FontSize="20"/>
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+                <ContentView Padding="30,0,30,0">
+                    <Entry x:Name="Contraseña" 
+                           Placeholder="Contraseña" 
+                           IsPassword="True"/>
+                </ContentView>
+
+                <Button Text="Registrar"
+                        x:Name="Registrar"
+                        FontSize="18" 
+                        FontAttributes="Bold"
+                        Margin="30" 
+                        TextColor="White" 
+                        BackgroundColor="#004483"
+                        CornerRadius="50"
+                        TextTransform="None"
+                        Clicked="Registrar_Clicked">
+                </Button>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
